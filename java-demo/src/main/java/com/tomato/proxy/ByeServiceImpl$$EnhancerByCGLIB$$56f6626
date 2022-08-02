@@ -1,0 +1,274 @@
+/*
+ * Decompiled with CFR.
+ *
+ * Could not load the following classes:
+ *  com.tomato.service.impl.ByeServiceImpl
+ */
+package com.tomato.service.impl;
+
+import com.tomato.service.impl.ByeServiceImpl;
+import java.lang.reflect.Method;
+import org.springframework.cglib.core.ReflectUtils;
+import org.springframework.cglib.core.Signature;
+import org.springframework.cglib.proxy.Callback;
+import org.springframework.cglib.proxy.Factory;
+import org.springframework.cglib.proxy.MethodInterceptor;
+import org.springframework.cglib.proxy.MethodProxy;
+
+public class ByeServiceImpl$$EnhancerByCGLIB$$56f6626
+extends ByeServiceImpl
+implements Factory {
+    private boolean CGLIB$BOUND;
+    public static Object CGLIB$FACTORY_DATA;
+    private static final ThreadLocal CGLIB$THREAD_CALLBACKS;
+    private static final Callback[] CGLIB$STATIC_CALLBACKS;
+    private MethodInterceptor CGLIB$CALLBACK_0;
+    private static Object CGLIB$CALLBACK_FILTER;
+    private static final Method CGLIB$sayBye$0$Method;
+    private static final MethodProxy CGLIB$sayBye$0$Proxy;
+    private static final Object[] CGLIB$emptyArgs;
+    private static final Method CGLIB$equals$1$Method;
+    private static final MethodProxy CGLIB$equals$1$Proxy;
+    private static final Method CGLIB$toString$2$Method;
+    private static final MethodProxy CGLIB$toString$2$Proxy;
+    private static final Method CGLIB$hashCode$3$Method;
+    private static final MethodProxy CGLIB$hashCode$3$Proxy;
+    private static final Method CGLIB$clone$4$Method;
+    private static final MethodProxy CGLIB$clone$4$Proxy;
+
+    public ByeServiceImpl$$EnhancerByCGLIB$$56f6626() {
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626 byeServiceImpl$$EnhancerByCGLIB$$56f6626 = this;
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(byeServiceImpl$$EnhancerByCGLIB$$56f6626);
+    }
+
+    static {
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$STATICHOOK1();
+    }
+
+    public final boolean equals(Object object) {
+        MethodInterceptor methodInterceptor = this.CGLIB$CALLBACK_0;
+        if (methodInterceptor == null) {
+            ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(this);
+            methodInterceptor = this.CGLIB$CALLBACK_0;
+        }
+        if (methodInterceptor != null) {
+            Object object2 = methodInterceptor.intercept(this, CGLIB$equals$1$Method, new Object[]{object}, CGLIB$equals$1$Proxy);
+            return object2 == null ? false : (Boolean)object2;
+        }
+        return super.equals(object);
+    }
+
+    public final String toString() {
+        MethodInterceptor methodInterceptor = this.CGLIB$CALLBACK_0;
+        if (methodInterceptor == null) {
+            ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(this);
+            methodInterceptor = this.CGLIB$CALLBACK_0;
+        }
+        if (methodInterceptor != null) {
+            return (String)methodInterceptor.intercept(this, CGLIB$toString$2$Method, CGLIB$emptyArgs, CGLIB$toString$2$Proxy);
+        }
+        return super.toString();
+    }
+
+    public final int hashCode() {
+        MethodInterceptor methodInterceptor = this.CGLIB$CALLBACK_0;
+        if (methodInterceptor == null) {
+            ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(this);
+            methodInterceptor = this.CGLIB$CALLBACK_0;
+        }
+        if (methodInterceptor != null) {
+            Object object = methodInterceptor.intercept(this, CGLIB$hashCode$3$Method, CGLIB$emptyArgs, CGLIB$hashCode$3$Proxy);
+            return object == null ? 0 : ((Number)object).intValue();
+        }
+        return super.hashCode();
+    }
+
+    protected final Object clone() throws CloneNotSupportedException {
+        MethodInterceptor methodInterceptor = this.CGLIB$CALLBACK_0;
+        if (methodInterceptor == null) {
+            ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(this);
+            methodInterceptor = this.CGLIB$CALLBACK_0;
+        }
+        if (methodInterceptor != null) {
+            return methodInterceptor.intercept(this, CGLIB$clone$4$Method, CGLIB$emptyArgs, CGLIB$clone$4$Proxy);
+        }
+        return super.clone();
+    }
+
+    @Override
+    public Object newInstance(Callback[] callbackArray) {
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$SET_THREAD_CALLBACKS(callbackArray);
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626 byeServiceImpl$$EnhancerByCGLIB$$56f6626 = new ByeServiceImpl$$EnhancerByCGLIB$$56f6626();
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$SET_THREAD_CALLBACKS(null);
+        return byeServiceImpl$$EnhancerByCGLIB$$56f6626;
+    }
+
+    @Override
+    public Object newInstance(Class[] classArray, Object[] objectArray, Callback[] callbackArray) {
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626 byeServiceImpl$$EnhancerByCGLIB$$56f6626;
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$SET_THREAD_CALLBACKS(callbackArray);
+        Class[] classArray2 = classArray;
+        switch (classArray.length) {
+            case 0: {
+                byeServiceImpl$$EnhancerByCGLIB$$56f6626 = new ByeServiceImpl$$EnhancerByCGLIB$$56f6626();
+                break;
+            }
+            default: {
+                throw new IllegalArgumentException("Constructor not found");
+            }
+        }
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$SET_THREAD_CALLBACKS(null);
+        return byeServiceImpl$$EnhancerByCGLIB$$56f6626;
+    }
+
+    @Override
+    public Object newInstance(Callback callback) {
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$SET_THREAD_CALLBACKS(new Callback[]{callback});
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626 byeServiceImpl$$EnhancerByCGLIB$$56f6626 = new ByeServiceImpl$$EnhancerByCGLIB$$56f6626();
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$SET_THREAD_CALLBACKS(null);
+        return byeServiceImpl$$EnhancerByCGLIB$$56f6626;
+    }
+
+    public final void sayBye(String string) {
+        MethodInterceptor methodInterceptor = this.CGLIB$CALLBACK_0;
+        if (methodInterceptor == null) {
+            ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(this);
+            methodInterceptor = this.CGLIB$CALLBACK_0;
+        }
+        if (methodInterceptor != null) {
+            Object object = methodInterceptor.intercept(this, CGLIB$sayBye$0$Method, new Object[]{string}, CGLIB$sayBye$0$Proxy);
+            return;
+        }
+        super.sayBye(string);
+    }
+
+    @Override
+    public void setCallback(int n, Callback callback) {
+        switch (n) {
+            case 0: {
+                this.CGLIB$CALLBACK_0 = (MethodInterceptor)callback;
+                break;
+            }
+        }
+    }
+
+    public static MethodProxy CGLIB$findMethodProxy(Signature signature) {
+        String string = ((Object)signature).toString();
+        switch (string.hashCode()) {
+            case -1257897252: {
+                if (!string.equals("sayBye(Ljava/lang/String;)V")) break;
+                return CGLIB$sayBye$0$Proxy;
+            }
+            case -508378822: {
+                if (!string.equals("clone()Ljava/lang/Object;")) break;
+                return CGLIB$clone$4$Proxy;
+            }
+            case 1826985398: {
+                if (!string.equals("equals(Ljava/lang/Object;)Z")) break;
+                return CGLIB$equals$1$Proxy;
+            }
+            case 1913648695: {
+                if (!string.equals("toString()Ljava/lang/String;")) break;
+                return CGLIB$toString$2$Proxy;
+            }
+            case 1984935277: {
+                if (!string.equals("hashCode()I")) break;
+                return CGLIB$hashCode$3$Proxy;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void setCallbacks(Callback[] callbackArray) {
+        Callback[] callbackArray2 = callbackArray;
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626 byeServiceImpl$$EnhancerByCGLIB$$56f6626 = this;
+        this.CGLIB$CALLBACK_0 = (MethodInterceptor)callbackArray[0];
+    }
+
+    public static void CGLIB$SET_STATIC_CALLBACKS(Callback[] callbackArray) {
+        CGLIB$STATIC_CALLBACKS = callbackArray;
+    }
+
+    public static void CGLIB$SET_THREAD_CALLBACKS(Callback[] callbackArray) {
+        CGLIB$THREAD_CALLBACKS.set(callbackArray);
+    }
+
+    @Override
+    public Callback getCallback(int n) {
+        MethodInterceptor methodInterceptor;
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(this);
+        switch (n) {
+            case 0: {
+                methodInterceptor = this.CGLIB$CALLBACK_0;
+                break;
+            }
+            default: {
+                methodInterceptor = null;
+            }
+        }
+        return methodInterceptor;
+    }
+
+    @Override
+    public Callback[] getCallbacks() {
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BIND_CALLBACKS(this);
+        ByeServiceImpl$$EnhancerByCGLIB$$56f6626 byeServiceImpl$$EnhancerByCGLIB$$56f6626 = this;
+        return new Callback[]{this.CGLIB$CALLBACK_0};
+    }
+
+    static void CGLIB$STATICHOOK1() {
+        CGLIB$THREAD_CALLBACKS = new ThreadLocal();
+        CGLIB$emptyArgs = new Object[0];
+        Class<?> clazz = Class.forName("com.tomato.service.impl.ByeServiceImpl$$EnhancerByCGLIB$$56f6626");
+        Class<?> clazz2 = Class.forName("java.lang.Object");
+        Method[] methodArray = ReflectUtils.findMethods(new String[]{"equals", "(Ljava/lang/Object;)Z", "toString", "()Ljava/lang/String;", "hashCode", "()I", "clone", "()Ljava/lang/Object;"}, clazz2.getDeclaredMethods());
+        CGLIB$equals$1$Method = methodArray[0];
+        CGLIB$equals$1$Proxy = MethodProxy.create(clazz2, clazz, "(Ljava/lang/Object;)Z", "equals", "CGLIB$equals$1");
+        CGLIB$toString$2$Method = methodArray[1];
+        CGLIB$toString$2$Proxy = MethodProxy.create(clazz2, clazz, "()Ljava/lang/String;", "toString", "CGLIB$toString$2");
+        CGLIB$hashCode$3$Method = methodArray[2];
+        CGLIB$hashCode$3$Proxy = MethodProxy.create(clazz2, clazz, "()I", "hashCode", "CGLIB$hashCode$3");
+        CGLIB$clone$4$Method = methodArray[3];
+        CGLIB$clone$4$Proxy = MethodProxy.create(clazz2, clazz, "()Ljava/lang/Object;", "clone", "CGLIB$clone$4");
+        clazz2 = Class.forName("com.tomato.service.impl.ByeServiceImpl");
+        CGLIB$sayBye$0$Method = ReflectUtils.findMethods(new String[]{"sayBye", "(Ljava/lang/String;)V"}, clazz2.getDeclaredMethods())[0];
+        CGLIB$sayBye$0$Proxy = MethodProxy.create(clazz2, clazz, "(Ljava/lang/String;)V", "sayBye", "CGLIB$sayBye$0");
+    }
+
+    final void CGLIB$sayBye$0(String string) {
+        super.sayBye(string);
+    }
+
+    private static final void CGLIB$BIND_CALLBACKS(Object object) {
+        block2: {
+            Object object2;
+            block3: {
+                ByeServiceImpl$$EnhancerByCGLIB$$56f6626 byeServiceImpl$$EnhancerByCGLIB$$56f6626 = (ByeServiceImpl$$EnhancerByCGLIB$$56f6626)object;
+                if (byeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BOUND) break block2;
+                byeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$BOUND = true;
+                object2 = CGLIB$THREAD_CALLBACKS.get();
+                if (object2 != null) break block3;
+                object2 = CGLIB$STATIC_CALLBACKS;
+                if (CGLIB$STATIC_CALLBACKS == null) break block2;
+            }
+            byeServiceImpl$$EnhancerByCGLIB$$56f6626.CGLIB$CALLBACK_0 = (MethodInterceptor)((Callback[])object2)[0];
+        }
+    }
+
+    final boolean CGLIB$equals$1(Object object) {
+        return super.equals(object);
+    }
+
+    final String CGLIB$toString$2() {
+        return super.toString();
+    }
+
+    final int CGLIB$hashCode$3() {
+        return super.hashCode();
+    }
+
+    final Object CGLIB$clone$4() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}

@@ -10,38 +10,45 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class ReentrantLockTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ReentrantLockTest lockTest = new ReentrantLockTest();
         lockTest.noFairTest();
     }
 
-    public void noFairTest() {
+    public void noFairTest() throws InterruptedException {
         ReentrantLock lock = new ReentrantLock();
+        lock.unlock();
 
-        new Thread(() -> {
-            try {
-                lock.lock();
-                System.out.println(Thread.currentThread().getName() + "---- 获取到了锁-----");
-                Thread.sleep(2000l);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } finally {
-                lock.unlock();
-            }
-        }, "a").start();
+//        new Thread(() -> {
+//            try {
+//                lock.lock();
+//                System.out.println(Thread.currentThread().getName() + "---- 获取到了锁-----");
+//                Thread.sleep(5000l);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            } finally {
+//                System.out.println(Thread.currentThread().getName() + "---- 释放了锁-----");
+//                lock.unlock();
+//            }
+//        }, "a").start();
 
 
-        new Thread(() -> {
-            try {
-                lock.lock();
-                System.out.println(Thread.currentThread().getName() + "---- 获取到了锁-----");
-                Thread.sleep(5000l);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } finally {
-                lock.unlock();
-            }
-        }, "b").start();
+//        new Thread(() -> {
+//            try {
+//                lock.lock();
+//                System.out.println(Thread.currentThread().getName() + "---- 获取到了锁-----");
+//                Thread.sleep(5000l);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            } finally {
+//                lock.unlock();
+//            }
+//        }, "b").start();
+
+//        Thread.sleep(1000l);
+//        lock.unlock();
+//        System.out.println(Thread.currentThread().getName() + ":结束......");
+//        lock.lock();
     }
 
 }

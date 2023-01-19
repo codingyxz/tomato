@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  *
- *  vmOption: -Xmx60m -Xms60 -XX:SurvivorRatio=8
+ *  vmOption: -Xmx60m -Xms60m -XX:SurvivorRatio=8
  *
  *
  * @author zhxy

@@ -1,8 +1,9 @@
 package com.tomato.string;
 
-import org.springframework.util.StringUtils;
-
-import java.io.File;
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 /**
@@ -15,17 +16,46 @@ public class StringTest {
 
     public static void main(String[] args) {
 
-        System.out.println(String.format("temp%s%s.pdf", File.separator, "123"));
+
+        LocalDateTime now = LocalDateTime.now();
+        now = now.plusHours(15);
+        System.out.println(now.getDayOfYear());
 
 
-        Object str = null;
-        System.out.println(String.valueOf(str));
+        long total = 2090;
+        int page = 1000;
+
+        double ceil = Math.ceil(total / page);
+
+        System.out.println(ceil);
 
 
-        System.out.println(StringUtils.isEmpty(String.valueOf(str)));
+        String[] pieceArr = new String[4];
+
+        pieceArr[0] = "aa";
+        pieceArr[1] = "2022-01-01";
+        pieceArr[3] = "12345";
+
+//        System.out.println(String.format("%s_%s_%s_%s",pieceArr[0],pieceArr[1],pieceArr[2],pieceArr[3]));
 
 
-        System.out.println((String) str);
+        List<String> collect = Arrays.stream(pieceArr)
+                .filter(piece -> piece != null)
+                .collect(Collectors.toList());
+        System.out.println(String.join("_", collect));
+
+
+//        System.out.println(String.format("temp%s%s.pdf", File.separator, "123"));
+//
+//
+//        Object str = null;
+//        System.out.println(String.valueOf(str));
+//
+//
+//        System.out.println(StringUtils.isEmpty(String.valueOf(str)));
+//
+//
+//        System.out.println((String) str);
 
 
     }

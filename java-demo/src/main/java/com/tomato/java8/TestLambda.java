@@ -31,12 +31,12 @@ public class TestLambda {
     }
 
 
-    List<Employee> employeeList = Arrays.asList(
-            new Employee("zhangsan",18,9999.99),
-            new Employee("lisi",38,8888.88),
-            new Employee("wangwu",58,3333.33),
-            new Employee("zhaoliu",8,6666.66)
-            );
+//    List<Employee> employeeList = Arrays.asList(
+//            new Employee("zhangsan",18,9999.99),
+//            new Employee("lisi",38,8888.88),
+//            new Employee("wangwu",58,3333.33),
+//            new Employee("zhaoliu",8,6666.66)
+//            );
 
 
     @Test

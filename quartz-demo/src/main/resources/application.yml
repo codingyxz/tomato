@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: quartz-demo
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/tomato?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 12345687
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8081
+  address: 0.0.0.0
+
+
+
+
+

@@ -19,6 +19,12 @@ public class TestMap {
         map.put("3","3");
         map.put("4","4");
 
+        Map<String, String> map2 = new HashMap<>(2);
+        map2.put("2","10");
+        map2.put("5","5");
+
+        map.putAll(map2);
+
 
         System.out.println(map);
 

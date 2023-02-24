@@ -6,10 +6,15 @@ spring:
     username: root
     password: 12345687
     driver-class-name: com.mysql.cj.jdbc.Driver
+  quartz:
+    jdbc:
+      schema:
 
 server:
   port: 8081
   address: 0.0.0.0
+
+
 
 
 

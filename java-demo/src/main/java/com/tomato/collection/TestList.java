@@ -1,5 +1,7 @@
 package com.tomato.collection;
 
+import com.google.common.collect.Lists;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -22,7 +24,7 @@ public class TestList {
         arrayList.add("2");
         arrayList.add("3");
         arrayList.add("4");
-        arrayList.add("5");
+//        arrayList.add("5");
 //        List<String> strings = arrayList.subList(0, 2);
 //        System.out.println(strings);
 //        System.out.println(arrayList);
@@ -30,6 +32,8 @@ public class TestList {
 //        strings.set(0,"100");
 //        System.out.println(strings);
 //        System.out.println(arrayList);
+
+        List<List<String>> partition = Lists.partition(arrayList, 2);
 
         Iterator<String> iterator = arrayList.iterator();
         while (iterator.hasNext()){

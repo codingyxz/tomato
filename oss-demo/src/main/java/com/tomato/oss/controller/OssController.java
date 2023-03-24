@@ -49,7 +49,7 @@ public class OssController {
         OSSObject object = ossClient.getObject(ossConfig.getBucket(), key);
         String contentType = object.getObjectMetadata().getContentType();
         log.info(JSONUtil.toJsonPrettyStr(object.getObjectMetadata()));
-        response.setContentType(contentType);
+        response.setContentType("image/png");
         IOUtils.copy(object.getObjectContent(), response.getOutputStream());
     }
 
@@ -67,6 +67,7 @@ public class OssController {
         } catch (IOException e) {
             throw e;
         }
+        System.out.println(dir + ":" + key);
         return key;
     }
 

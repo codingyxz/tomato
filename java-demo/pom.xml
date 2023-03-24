@@ -116,6 +116,12 @@
         <!--        </dependency>-->
         <!--===================OSS相关======================-->
 
+        <dependency>
+            <groupId>net.openhft</groupId>
+            <artifactId>affinity</artifactId>
+            <version>3.2.3</version>
+        </dependency>
+
     </dependencies>
 
     <build>

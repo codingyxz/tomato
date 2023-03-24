@@ -17,6 +17,14 @@ public class TestDynamicProxy {
 
     public static void main(String[] args) throws IOException {
 
+        /**
+         * 生成代理类文件
+         */
+        // 1、旧版本jdk
+//        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        // 2、新版本jdk
+        System.getProperties().put("jdk.proxy.ProxyGenerator.saveGeneratedFiles", "true");
+
         HelloService proxyInstance = (HelloService) Proxy.newProxyInstance(TestDynamicProxy.class.getClassLoader(), new Class[]{HelloService.class}, new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {

@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class RegexTest {
 
 
-    private static final String SPECIAL_CHARACTERS = "[{}\\[\\]()\\\\.^$|?*+（）一杰]";
+    private static final String SPECIAL_CHARACTERS = "[{}\\[\\]()\\\\.^|$?*+（）一杰]";
 
     public static String escapeSpecialCharacters(String input) {
         Pattern pattern = Pattern.compile(SPECIAL_CHARACTERS);
@@ -44,8 +44,14 @@ public class RegexTest {
     public static void main(String[] args) {
 
 
-        System.out.println(escapeChineseCharacters("ad\u4E00\u9FA5gc[}{{（）"));
+//        System.out.println(escapeChineseCharacters("ad\u4E00\u9FA5gc[}{{（）"));
 //        System.out.println(escapeChineseCharacters("云杰"));
+
+        String str = "123245$";
+//        str = Matcher.quoteReplacement(str);
+//        System.out.println(str);
+        System.out.println(escapeSpecialCharacters(str));
+
     }
 
 

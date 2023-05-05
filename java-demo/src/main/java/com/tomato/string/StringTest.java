@@ -18,13 +18,25 @@ public class StringTest {
     public static void main(String[] args) {
 
 
-        BigDecimal bigDecimal = new BigDecimal("200.0");
-        System.out.println(bigDecimal);
-        System.out.println(bigDecimal.toPlainString());
-        BigDecimal bigDecimal1 = new BigDecimal("200.0");
-        System.out.println(bigDecimal1.stripTrailingZeros().toPlainString());
+        String path = "sdjfdjgod";
 
-        System.out.println(bigDecimal.equals(bigDecimal1));
+
+        System.out.println(path.equals("sdjfdjgod"));
+        System.out.println(path.equals(new String("sdjfdjgod")));
+        System.out.println(new String(path).equals(new String("sdjfdjgod")));
+
+        System.out.println(path);
+        System.out.println(new String("sdjfdjgod"));
+        System.out.println("----");
+
+
+//        BigDecimal bigDecimal = new BigDecimal("200.0");
+//        System.out.println(bigDecimal);
+//        System.out.println(bigDecimal.toPlainString());
+//        BigDecimal bigDecimal1 = new BigDecimal("200.0");
+//        System.out.println(bigDecimal1.stripTrailingZeros().toPlainString());
+//
+//        System.out.println(bigDecimal.equals(bigDecimal1));
 
 //
 //        Object str = null;

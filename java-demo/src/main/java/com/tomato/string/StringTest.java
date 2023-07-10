@@ -17,17 +17,25 @@ public class StringTest {
 
     public static void main(String[] args) {
 
+//        String fileName = "4301013909100055340_001_23179000005_20230628_acc.pdf";
 
-        String path = "sdjfdjgod";
+        String fileName = "1111111_20230617_2345654345_0000#2344#32434#345465656_00034.pdf";
+
+        String substring = fileName.substring(fileName.indexOf("#") + 1);
+
+        System.out.println(substring);
 
 
-        System.out.println(path.equals("sdjfdjgod"));
-        System.out.println(path.equals(new String("sdjfdjgod")));
-        System.out.println(new String(path).equals(new String("sdjfdjgod")));
-
-        System.out.println(path);
-        System.out.println(new String("sdjfdjgod"));
-        System.out.println("----");
+//        String path = "sdjfdjgod";
+//
+//
+//        System.out.println(path.equals("sdjfdjgod"));
+//        System.out.println(path.equals(new String("sdjfdjgod")));
+//        System.out.println(new String(path).equals(new String("sdjfdjgod")));
+//
+//        System.out.println(path);
+//        System.out.println(new String("sdjfdjgod"));
+//        System.out.println("----");
 
 
 //        BigDecimal bigDecimal = new BigDecimal("200.0");

@@ -18,4 +18,9 @@ public class Employee {
     private Computer computer;
     private StatusEnum status;
 
+    public Employee(String name, Integer age, Double salary) {
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
 }

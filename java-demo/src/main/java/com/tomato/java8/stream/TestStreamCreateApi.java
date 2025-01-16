@@ -1,11 +1,10 @@
 package com.tomato.java8.stream;
 
 
+import com.tomato.java8.Employee;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
 /**
@@ -35,6 +34,9 @@ public class TestStreamCreateApi {
         // 生成
         Stream<Double> stream4 = Stream.generate(Math::random).limit(2);
         stream4.forEach(System.out::println);
+
+        Map<String,Employee> map = new HashMap<>();
+
     }
 
 }
